@@ -9,7 +9,7 @@ import { Search, SearchSlash } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-export default function Shirt() {
+export default function ShirtPage() {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");

@@ -7,7 +7,6 @@ import AdminLayout from "./components/layout/AdminLayout";
 import AuthLayout from "./components/layout/AuthLayout";
 
 import HomePage from "./pages/home/HomePage";
-import Shirt from "./pages/shirt/shirt";
 import ProductDetails from "./pages/admin/ProductDetails";
 import { PurchasePage } from "./pages/admin/PurchasePage";
 import ProductAdminPage from "./pages/admin/ProductAdminPage";
@@ -18,7 +17,7 @@ import LoginPage from "./pages/auth/LoginPage";
 import RegisterPage from "./pages/auth/RegisterPage";
 import { NotFoundPage } from "./pages/auth/NotFoundPage";
 import CategoryPage from "./pages/admin/CategoryPage";
-import UserPage from "./pages/admin/UserPage";
+import ShirtPage from "./pages/user/ShirtPage";
 
 function App() {
   return (
@@ -38,8 +37,8 @@ function App() {
 
           {/* User routes */}
           <Route path="/user" element={<MainLayout />}>
-            <Route index element={<Shirt />} />
-            <Route path="shirt" element={<Shirt />} />
+            <Route index element={<ShirtPage />} />
+            <Route path="shirt" element={<ShirtPage />} />
             <Route path="purchase" element={<PurchasePage />} />
             <Route path="product/:id" element={<ProductDetails />} />
           </Route>
